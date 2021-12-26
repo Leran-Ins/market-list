@@ -1,11 +1,9 @@
 class Message:
-    __choice = '(y/n)'
     ITEM_NAME = 'Que item você quer colocar na lista? '
+    INVALID_NAME = 'Nome {} inválido, ele pode conter uma sequencia de espaços ou ser um número, tente novamente!'
     ITEM_PRICE = 'Qual seria o preço estimado para o item? '
-    BLANK_NAME = 'O nome do item não pode ser apenas de espaços! Tente de novo.'
-    EMPTY_NAME = 'O nome do item não pode ser vazio! Tente de novo.'
-    ADD_REMINDER = 'Deseja adicionar um lembrete? {} '.format(__choice)
-    ANOTHER_ITEM = 'Adicionar outro item? {} '.format(__choice)
-    ADDED_ITEM = '{}: adicionado \'{}\' com o preço estimado de \'{}\' lembrete: \'{}\''
+    ITEM_AMOUNT = 'Qual seria a quantidade de itens? '
+    ANOTHER_ITEM = 'Adicionar outro item? (y|n) '
+    ADDED_ITEM = '{}: adicionado \'{}\' \'{}\' por um preço estimado de \'{}\''
     EXPENSIVE_ITEM = 'O item mais caro saiu por {}'
     CHEAPER_ITEM = 'O item mais barato saiu por {}'
